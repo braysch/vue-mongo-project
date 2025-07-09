@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.route("/").get(getContacts);
 
-router.route("/:id").post(createContact);
+router.route("/").post(createContact);
 
 router.route("/:id").get(getContact);
 
