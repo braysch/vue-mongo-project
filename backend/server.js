@@ -2,9 +2,11 @@ const express = require("express");
 const dotenv = require("dotenv");
 const errorHandler = require("./middleware/errorHandler");
 const mongoose = require("mongoose");
+const cors = require('cors');
 
 const app = express();
 
+app.use(cors());
 app.use(express.json()); // needed to read req body
 app.use("/api/contacts", require("./routes/contactRoutes"));
 app.use(errorHandler);

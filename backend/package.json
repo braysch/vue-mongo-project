@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/braysch/vue-mongo-project#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.1.0",
     "express": "^5.1.0",
     "express-async-handler": "^1.2.0",
